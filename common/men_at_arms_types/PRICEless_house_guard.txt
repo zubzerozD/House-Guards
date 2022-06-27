@@ -1,0 +1,107 @@
+﻿# Special
+house_guard = {
+	type = heavy_infantry
+	
+	damage = 110
+	toughness = 100
+	pursuit = 0
+	screen = 30
+	
+	terrain_bonus = {
+		plains = { damage = 15 }
+		hills = { toughness = 15 }
+		mountains = { toughness = 30 }
+		desert_mountains = { toughness = 30 }
+	}
+	
+	counters = {
+		pikemen = 2
+		skirmishers = 2
+		light_cavalry = 3
+		heavy_infantry = 2
+		heavy_cavalry = 3
+	}
+	
+	siege_value = 0.4
+	
+	buy_cost = { gold = 1200 }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 30 }
+	
+	max_sub_regiments = 1
+	
+	stack = 500
+	ai_quality = { value = 100 }
+	icon = house_guard
+}
+
+house_cavalry = {
+	type = heavy_cavalry
+	
+	damage = 180
+	toughness = 125
+	pursuit = 30
+	screen = 50
+	
+	terrain_bonus = {
+		plains = { damage = 50 }
+		drylands = { damage = 50 }
+		hills = { damage = -20 }
+		jungle = { damage = -50 }
+		mountains = { damage = -75 }
+		desert_mountains = { damage = -75 }
+		wetlands = { damage = -100 toughness = -40 }
+	}
+	
+	counters = {
+		archers = 3
+		skirmishers = 3
+		light_cavalry = 2
+		heavy_infantry = 2
+	}
+	
+	siege_value = 0.2
+	
+	buy_cost = { gold = 1800 }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 50 }
+	
+	max_sub_regiments = 1
+	
+	stack = 250
+	ai_quality = { value = 100 }
+	icon = house_cavalry
+}
+
+house_gunners = {
+	type = archers
+	
+	damage = 210
+	toughness = 30
+	pursuit = 15
+	screen = 10
+	
+	terrain_bonus = {
+		plains = { damage = 20 }
+		hills = { damage = 30 }
+	}
+	
+	counters = {
+		archers = 2
+		pikemen = 3
+		heavy_infantry = 3
+		heavy_cavalry = 2
+	}
+	
+	siege_value = 0.4
+	
+	buy_cost = { gold = 1200 }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 30 }
+	
+	max_sub_regiments = 1
+	
+	stack = 500
+	ai_quality = { value = 100 }
+	icon = house_gunners
+}

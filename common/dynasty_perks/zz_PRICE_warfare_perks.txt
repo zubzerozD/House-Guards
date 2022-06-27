@@ -1,0 +1,76 @@
+﻿# WARFARE LEGACIES
+
+warfare_legacy_1 = { # House of Warriors
+	legacy = warfare_legacy_track	
+	cost = dynasty_legacy_tier_1_cost
+	character_modifier = {
+		name = warfare_legacy_1_name
+		knight_effectiveness_mult = 0.5
+		levy_size = 0.2
+	}
+	
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+warfare_legacy_2 = { # Generational Belligerence
+	legacy = warfare_legacy_track
+	cost = dynasty_legacy_tier_2_cost
+	effect = {
+		custom_description_no_bullet = {
+			text = warfare_legacy_2_effect
+		}
+
+	}
+	character_modifier = {
+		title_creation_cost_mult = -0.025
+		monthly_war_income_mult = 0.1
+		levy_reinforcement_rate = 0.5
+	}
+
+}
+
+warfare_legacy_3 = { # Squire Traditions
+	legacy = warfare_legacy_track
+	cost = dynasty_legacy_tier_3_cost
+	character_modifier = {
+		monthly_martial_lifestyle_xp_gain_mult = 0.2
+		prowess = 10
+		movement_speed = 0.15
+	}
+}
+
+warfare_legacy_4 = { # Inherited Tactics
+	legacy = warfare_legacy_track
+	cost = dynasty_legacy_tier_4_cost
+	character_modifier = {
+		advantage = 5
+		martial = 5
+		counter_efficiency = 0.20
+		siege_weapon_siege_value_mult = 0.25
+	}
+}
+
+warfare_legacy_5 = { # Private Army
+	legacy = warfare_legacy_track
+	cost = dynasty_legacy_tier_5_cost
+
+	character_modifier = {
+		men_at_arms_cap = 4
+		unlock_maa = house_guard
+		unlock_maa = house_cavalry
+		unlock_maa = house_gunners
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = warfare_legacy_5_effect
+		}	
+	}
+}
